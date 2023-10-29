@@ -9,17 +9,20 @@ public class Les2Task4 {
         int number3 = scan.nextInt();
         if (Math.abs(number1) < Math.abs(number2) && Math.abs(number1) < Math.abs(number3)) {
             System.out.println(number1);
-        } else if (Math.abs(number1) > Math.abs(number2) && Math.abs(number2) < Math.abs(number3)) {
-            System.out.println(number2);
-        } else if (Math.abs(number1) > Math.abs(number2) && Math.abs(number2) > Math.abs(number3)) {
+        } else if (Math.abs(number1) < Math.abs(number2) && Math.abs(number1) > Math.abs(number3)) {
             System.out.println(number3);
+        } else if (Math.abs(number1) > Math.abs(number2) && Math.abs(number1) > Math.abs(number3) && Math.abs(number2) > Math.abs(number3)) {
+            System.out.println(number3);
+        } else if (Math.abs(number1) > Math.abs(number2) && Math.abs(number1) > Math.abs(number3) && Math.abs(number2) < Math.abs(number3)) {
+            System.out.println(number2);
         } else if (Math.abs(number1) == Math.abs(number2) && Math.abs(number1) == Math.abs(number3)) {
             System.out.print(number1);
             System.out.print(" ");
             System.out.print(number2);
             System.out.print(" ");
             System.out.print(number3);
-        } else if (Math.abs(number1) == Math.abs(number2) && Math.abs(number1) < Math.abs(number3)) {
+        } else if (Math.abs(number1) == Math.abs(number2) &&
+        Math.abs(number1) < Math.abs(number3)) {
             System.out.print(number1);
             System.out.print(" ");
             System.out.print(number2);
