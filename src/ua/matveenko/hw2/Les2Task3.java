@@ -1,3 +1,5 @@
+package ua.matveenko.hw2;
+
 import java.util.Scanner;
 public class Les2Task3 {
     public static void main(String[] args) {
