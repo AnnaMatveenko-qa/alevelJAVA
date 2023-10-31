@@ -3,10 +3,10 @@ package ua.matveenko.hw2;
 import java.util.Scanner;
 public class Les2Task3 {
     public static void main(String[] args) {
-        System.out.print("Введите любое  число: ");
+        System.out.print("Введите любое целое число: ");
         Scanner scan = new Scanner(System.in);
-        double number = scan.nextDouble();
-        String result = number % 2 <= 0 ? "Число четное!" : "Число нечетное!";
-        System.out.println(result);
-    }
+        int number = scan.nextInt();
+        String result = number % 2 <= 0 ? "Число " +number+" четное" : "Число " + number+" нечетное ";
+        System.out.print(result);
+     }
 }
