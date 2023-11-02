@@ -1,6 +1,6 @@
 package ua.matveenko.hw2;
 
-public class Les2Task2 {
+public class Task2 {
     public static void main(String[] args) {
         int AX = 1;
         int AY = 5;
