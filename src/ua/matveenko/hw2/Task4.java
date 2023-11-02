@@ -9,28 +9,30 @@ public class Task4 {
         int number1 = scan.nextInt();
         int number2 = scan.nextInt();
         int number3 = scan.nextInt();
-        if (Math.abs(number1) < Math.abs(number2) && Math.abs(number1) < Math.abs(number3)) {
+        int number1Abs = Math.abs(number1);
+        int number2Abs = Math.abs(number2);
+        int number3Abs = Math.abs(number3);
+        if ((number1Abs < number2Abs) && (number1Abs < number3Abs)) {
             System.out.println(number1);
-        }
-        if (Math.abs(number2) < Math.abs(number3)) {
+        } else if (number2Abs < number3Abs) {
             System.out.println(number2);
-        } else if (Math.abs(number1)!=Math.abs(number2) && Math.abs(number2)!=Math.abs(number3)&&Math.abs(number1)!=Math.abs(number3) ){
+        } else if ((number1Abs != number2Abs) && (number2Abs != number3Abs) && (number1Abs != number3Abs)) {
             System.out.println(number3);
-        }  if (Math.abs(number1) == Math.abs(number2) && Math.abs(number1) == Math.abs(number3)) {
+        } else if ((number1Abs == number2Abs) && (number1Abs == number3Abs)) {
             System.out.print(number1);
             System.out.print(" ");
             System.out.print(number2);
             System.out.print(" ");
             System.out.print(number3);
-        } else if (Math.abs(number1) == Math.abs(number2) && Math.abs(number1) < Math.abs(number3)) {
+        } else if ((number1Abs == number2Abs) && (number1Abs < number3Abs)) {
             System.out.print(number1);
             System.out.print(" ");
             System.out.print(number2);
-        } else if (Math.abs(number1) > Math.abs(number2) && Math.abs(number2) == Math.abs(number3)) {
+        } else if ((number1Abs > number2Abs) && (number2Abs == number3Abs)) {
             System.out.print(number2);
             System.out.print(" ");
             System.out.print(number3);
-        } else if (Math.abs(number1) < Math.abs(number2) && Math.abs(number1) == Math.abs(number3)) {
+        } else if ((number1Abs < number2Abs) && (number1Abs == number3Abs)) {
             System.out.print(number1);
             System.out.print(" ");
             System.out.print(number3);
