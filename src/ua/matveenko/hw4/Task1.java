@@ -12,17 +12,16 @@ public class Task1 {
         int[] array = new int[400];
         fillArray(array);
         System.out.println(Arrays.toString(array));
-        int[] targetArray = Arrays.copyOf(array, array.length);
-        Arrays.sort(targetArray);
-        System.out.println(Arrays.toString(targetArray));
-        System.out.println("Arithmetical mean: " + arithmeticalMean(targetArray));
-        System.out.println("Geometric mean: " + geometricMean(targetArray));
-    }
+        System.out.println("Arithmetical mean: " + arithmeticalMean(array));
+        System.out.println("Geometric mean: " + geometricMean(array));
+         }
+
     public static void fillArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             array[i] = ThreadLocalRandom.current().nextInt(1, 11);
         }
     }
+
     public static double arithmeticalMean(int[] array) {
         double sum = 0;
         for (int i : array) {
@@ -30,6 +29,7 @@ public class Task1 {
         }
         return sum / array.length;
     }
+
     public static double geometricMean(int[] array) {
         double productOfNumbers = 1;
         for (int i : array) {
