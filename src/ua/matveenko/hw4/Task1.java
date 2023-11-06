@@ -18,13 +18,11 @@ public class Task1 {
         System.out.println("Arithmetical mean: " + arithmeticalMean(targetArray));
         System.out.println("Geometric mean: " + geometricMean(targetArray));
     }
-
     public static void fillArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             array[i] = ThreadLocalRandom.current().nextInt(1, 11);
         }
     }
-
     public static double arithmeticalMean(int[] array) {
         double sum = 0;
         for (int i : array) {
@@ -32,7 +30,6 @@ public class Task1 {
         }
         return sum / array.length;
     }
-
     public static double geometricMean(int[] array) {
         double productOfNumbers = 1;
         for (int i : array) {
