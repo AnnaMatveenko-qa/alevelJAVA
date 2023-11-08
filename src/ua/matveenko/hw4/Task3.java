@@ -1,5 +1,8 @@
 package ua.matveenko.hw4;
-
+/*
+Заполнить одномерный массив случайными целочисленными значениями.
+Все четные значения заменить на нули. Размер массива - 2000 элементов.
+ */
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
