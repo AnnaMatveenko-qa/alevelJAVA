@@ -1,4 +1,5 @@
 package ua.matveenko.hw5;
+//Проверить заданный массив на упорядоченность по убыванию.
 
 import java.util.Arrays;
 
@@ -9,27 +10,24 @@ public class Task2 {
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(Arrays.toString(numbers[i]));
         }
-        int[] array = new int[numbers[0].length * numbers.length];
-        copyTwoToOneArray(numbers, array);
-        System.out.println(Arrays.toString(array));
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println(Arrays.toString(numbers[i]));
-        }
-        boolean result = checkDescending(array);
+        boolean result = checkDescending(numbers);
         System.out.println("descending check: " + result);
     }
 
 
-    public static void copyTwoToOneArray(int[][] numbers, int[] array) {
+    public static int[] copyTwoToOneArray(int[][] numbers) {
+        int[] array = new int[numbers[0].length * numbers.length];
         int count = 0;
         for (int i = 0; i < numbers.length; i++) {
             for (int j = 0; j < numbers[0].length; j++) {
                 array[count++] = numbers[i][j];
             }
         }
+        return array;
     }
 
-    public static boolean checkDescending(int[] array) {
+    public static boolean checkDescending(int[][] number) {
+        int[] array = copyTwoToOneArray(number);
         boolean result = true;
         for (int i = 1; i < array.length; i++) {
             if (array[i] > array[i - 1]) {
