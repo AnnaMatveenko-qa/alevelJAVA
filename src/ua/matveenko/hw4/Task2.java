@@ -7,11 +7,11 @@ import java.util.concurrent.ThreadLocalRandom;
 • Проверить сколько простых чисел присутствует в массиве. Размер массива 1000 элементов.*/
 public class Task2 {
     public static void main(String[] args) {
-            int[] numbers = new int[1000];
-            fillArray(numbers);
-            System.out.println(Arrays.toString(numbers));
-            System.out.println("Number of simple numbers: " + numberOfPrimeNumbers(numbers));
-             }
+        int[] numbers = new int[1000];
+        fillArray(numbers);
+        System.out.println(Arrays.toString(numbers));
+        System.out.println("Number of simple numbers: " + numberOfPrimeNumbers(numbers));
+    }
 
     public static void fillArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
