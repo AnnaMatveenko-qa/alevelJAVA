@@ -9,10 +9,8 @@ public class Task1 {
         moduloTheElementsOfOddRows(numbers);
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(Arrays.toString(numbers[i]));
-
         }
-        }
-
+    }
 
 
     public static void arrangeElements(int[][] array) {
@@ -22,22 +20,19 @@ public class Task1 {
                 array[i][j] = k;
                 k--;
             }
-
         }
-
     }
-    public static void moduloTheElementsOfOddRows(int[][] array){
-        for (int i = 0; i < array.length; i++){
+
+    public static void moduloTheElementsOfOddRows(int[][] array) {
+        for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                if (i% 2 ==0){
-                    array[i][j]=Math.abs(array[i][j]);
-            }
-
+                if (i % 2 == 0) {
+                    array[i][j] = Math.abs(array[i][j]);
                 }
-
             }
         }
     }
+}
 
 
 
