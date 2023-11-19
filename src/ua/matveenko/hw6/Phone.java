@@ -35,10 +35,15 @@ public class Phone {
         System.out.print(phone.weight + "  ");
         System.out.println();
         Phone secondPhone = new Phone("0971111111", "iPhone 15 Pro");
+        secondPhone.weight = 150;
         System.out.print(secondPhone.number + "  ");
-        System.out.print(secondPhone.model);
+        System.out.print(secondPhone.model+ " ");
+        System.out.print(secondPhone.weight);
         System.out.println();
         Phone anotherPhone = new Phone();
+        anotherPhone.number = "0501111199";
+        anotherPhone.model = "Samsung Galaxy Flip 5";
+        anotherPhone.weight =  187;
         System.out.print(anotherPhone.number + " ");
         System.out.print(anotherPhone.model + " ");
         System.out.print(anotherPhone.weight);
